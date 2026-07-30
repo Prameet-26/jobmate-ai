@@ -1,7 +1,9 @@
 import Navbar from "../../components/layout/Navbar";
 import Hero from "../../components/ui/Hero";
 import FeatureCard from "../../components/ui/FeatureCard";
-
+import HowItWorks from "../../components/ui/HowItWorks";
+import Stats from "../../components/ui/Stats";
+import Footer from "../../components/layout/Footer";
 
 export default function Home() {
 
@@ -13,9 +15,10 @@ export default function Home() {
 
       <Hero />
 
+      <HowItWorks />
+
 
       <section className="py-20 px-10 bg-gray-50">
-
 
         <h2 className="text-4xl font-bold text-center mb-12">
           Everything You Need To Build Your Career
@@ -23,7 +26,6 @@ export default function Home() {
 
 
         <div className="grid md:grid-cols-3 gap-8">
-
 
           <FeatureCard
             icon="📄"
@@ -45,11 +47,14 @@ export default function Home() {
             description="Practice interviews with intelligent AI questions."
           />
 
-
         </div>
 
-
       </section>
+
+
+      <Stats />
+
+      <Footer />
 
 
     </div>
